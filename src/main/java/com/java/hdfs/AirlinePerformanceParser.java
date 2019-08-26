@@ -18,7 +18,6 @@ public class AirlinePerformanceParser {
 				departureDelayAvailable = false;
 			}
 			
-			
 			year =  Integer.parseInt(values[0]);
 			
 			month =  Integer.parseInt(values[1]);
@@ -26,6 +25,7 @@ public class AirlinePerformanceParser {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 	public int getYear() {return year;}
 	public int getMonth() {return month;}

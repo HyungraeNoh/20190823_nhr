@@ -48,6 +48,7 @@ public class Home extends HttpServlet {
 			rd.forward(req, res);
 		}
 		System.out.println("Home.doPost() >> End");
+		
 	}
 
 	// 웹 화면 처리 메소드

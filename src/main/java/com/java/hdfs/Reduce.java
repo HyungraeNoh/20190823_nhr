@@ -14,6 +14,7 @@ public class Reduce extends Reducer<Text, IntWritable, Text, IntWritable> {
 	
 	@Override
 	protected void reduce(Text key, Iterable<IntWritable> value, Reducer<Text, IntWritable, Text, IntWritable>.Context context) throws IOException, InterruptedException {
+		
 		// 결합할 값 변수
 		int sum = 0;
 		// 입력 받은 값을 반복문으로 합하기
