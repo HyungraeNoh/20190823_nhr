@@ -13,7 +13,7 @@ public class AirlinePerformanceParser {
 			String[] values = text.toString().split(",");
 			
 			if(!values[15].equals("NA")) {
-				departureDealyTime = Integer.parseInt(values[15]);
+				departureDealyTime = Integer.parseInt(values[15])/60;
 			} else{
 				departureDelayAvailable = false;
 			}

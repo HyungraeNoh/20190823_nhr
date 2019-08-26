@@ -20,20 +20,12 @@ public class Map extends Mapper<LongWritable, Text, Text, IntWritable> {
 		
 		AirlinePerformanceParser parser = new AirlinePerformanceParser(value);
 		
-		textKey.set(parser.getYear()+ "," + parser.getMonth());
-		intValue.set(parser.getDepartureDealyTime());
+		textKey.set(parser.getYear()+ "Year " + parser.getMonth() + "Month  -> ");
+		intValue.set(parser.getDepartureDealyTime() );
 		
 		if(parser.getDepartureDealyTime() <= 150000) {
 			context.write(textKey, intValue);
 		}
-		
-		
-
-		
-
-		
-		
-		
 		
 	}
 	
